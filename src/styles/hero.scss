@@ -2,4 +2,50 @@
     padding: 5.6vw;
     min-height: 80vh;
     background-image: url(../imagens/champions-league.jpg);
+    background-size: cover;
+}
+
+.button-main button:first-child {
+    background-color: #5f27cd;
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 14px 8px;
+    letter-spacing: 1px;
+    border: 1px transparent;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(#5f27cd, 15%);
+    }
+}
+
+.button-main button:last-child {
+    background-color: #011144;
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 14px 8px;
+    letter-spacing: 1px;
+    border: 1px transparent;
+    cursor: pointer;
+    margin-top: 4px;
+
+    &:hover {
+        background-color: lighten(#011144, 15%);
+    }
 }

@@ -7,6 +7,61 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="hero"></section>
+    <header class="header">
+        <div class="header-container">
+            <h1>
+                <img class="header-logo" src="dist/imagens/champions-league-logo.png" alt="Logo Champions">
+            </h1>
+            <nav>
+            <ul class="header header-list">
+                <li class="header-list-item">
+                    <a class="button" href="#">Inicio</a>
+                </li>
+                <li class="header-list-item">
+                    <a class="button" href="#">Jogos Ao Vivo</a>
+                </li>
+                <li class="header-list-item">
+                    <a class="button" href="#">Melhores Momentos</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <h1 class="title-big">Lionel Messi x Cristiano Ronaldo</h1>
+        <p class="text-small">Messi ou CR7, quem é o GOAT da Champions? <br> 
+        Venha assistir grandes momentos dos craques, só aqui na Champions+</p>
+        <br><br><br>
+        <div class="button-main">   
+            <button>Assistir Agora</button>
+            <button>Reiniciar</button>
+        </div>
+    </section>
+    <section class="craques">
+        <nav class="craques-button">
+            <button data-tab-button="messi" class="crmessi craques--is-active">Lionel Messi</button>
+            <button data-tab-button="cristiano" class="crmessi">Cristiano Ronaldo</button>
+            <ul data-tab-id="messi" class="craques-list craques-list--is-active">
+                <li class="craques-list-item">
+                    <img src="dist/imagens//lionel messi/messi-arsenal.jpg" alt="Puskas">
+                </li>
+                <li class="craques-list-item">
+                    <img src="dist/imagens/lionel messi/messi-boateng.jpeg" alt="Puskas">
+                </li>
+                <li class="craques-list-item">
+                    <img src="dist/imagens/lionel messi/messi-real-madrid.jpg" alt="Puskas">
+                </li>
+                <li class="craques-list-item">
+                    <img src="dist/imagens/lionel messi/messi-leverkusen.jpg" alt="Puskas">
+                </li>
+                <li class="craques-list-item">
+                    <img src="dist/imagens/lionel messi/messi-liverpool.jpeg" alt="Puskas">
+                </li>
+                <li class="craques-list-item">
+                    <img  src="dist/imagens/lionel messi/messi-champions.jpg" alt="Puskas">
+                </li>
+            </ul>
+        </nav>
+    </section>
 </body>
 </html>

@@ -1,7 +1,45 @@
 @use 'hero';
+@use 'header';
+@use 'craques';
 
-$bgColor: green;
+@font-face {
+    font-family: Avenir;
+    src: url(../../src/fonts/Avenir-Regular.woff2);
+    font-weight: 400px;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../src/fonts/Avenir-Bold.woff2);
+    font-weight: 700px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: #2b2c64;
+    
+}
+
+.title-big {
+    margin-top: 16px;
+    font-size: 32px;
+    color: #f9f9f9;
+}
+
+.text-small {
+    font-size: 18px;
+    margin-top: 16px;
+    color: #f9f9f9;
+}
+
+.text {
+    color: #f9f9f9;
+    margin-left: 186px;
 }
