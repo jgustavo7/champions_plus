@@ -3,7 +3,16 @@
     min-height: 80vh;
     background-image: url(../imagens/champions-league.jpg);
     background-size: cover;
-}
+
+    @media (max-width: 768px) {
+            background-image: url(../imagens/champions-league-celular.jpg);
+            padding-top: 32px;
+            margin-bottom: 8px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
 
 .button-main button:first-child {
     background-color: #5f27cd;
@@ -22,8 +31,21 @@
     border: 1px transparent;
     cursor: pointer;
 
+    @media (max-width: 768px) {
+        height: 50px;
+        width: 120px;
+        letter-spacing: 2;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
     &:hover {
         background-color: lighten(#5f27cd, 15%);
+        transform: scale(1.1);
+        transition: .5s ease;
     }
 }
 
@@ -45,7 +67,20 @@
     cursor: pointer;
     margin-top: 4px;
 
+    @media (max-width: 768px) {
+        height: 50px;
+        width: 120px;
+        letter-spacing: 2;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
     &:hover {
         background-color: lighten(#011144, 15%);
+        transform: scale(1.1);
+        transition: .5s ease;
     }
 }

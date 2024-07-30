@@ -8,6 +8,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
         &--is-active {
             display: grid;
         }
@@ -18,5 +22,102 @@
                 border-radius: 4px;
             }
         }
+    }
+}
+
+.card {
+    padding: 8px 8px 8px 8px;
+    background-color: #17183d;
+    border-radius: 8px;
+
+
+    h4 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+.card-button {
+    button:first-child {
+        background-color: #5f27cd;
+        color: #f9f9f9;
+        width: 50%;
+        height: 30px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        text-decoration: none;
+        border: 1px transparent;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten(#5f27cd, 15%);
+            transform: scale(1.1);
+            transition: .5s ease;
+        }
+}
+    button:last-child {
+        background-color: #02228b;
+        color: #f9f9f9;
+        width: 48%;
+        height: 30px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        text-decoration: none;
+        border: 1px transparent;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten(#02228b, 15%);
+            transform: scale(1.1);
+            transition: .5s ease;
+        }   
+    }
+}
+
+.craques-tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.craques-tabs-button {
+    background-color: transparent;
+    color: #fff;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 14px 8px;
+    letter-spacing: 1px;
+    border: 1px solid;
+    cursor: pointer;
+
+        @media (max-width:768px) {
+            height: 50px;
+            width: 120px;
+            letter-spacing: 2;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            transition: .5s ease;
+        }
+
+    &--is-active {
+        border-color: #fff;
     }
 }
